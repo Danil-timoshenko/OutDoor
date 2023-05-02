@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -14,6 +14,19 @@
 </head>
 
 <body>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form action="php/feedback.php" method="post" class="modalForm">
+        <input placeholder="Введите имя" type="text" name="name">
+        <input placeholder="Введите почту" type="text" name="email">
+        <input placeholder="Введите номер телефона" type="text" name="phone">
+        <input placeholder="Введите название товара" type="text" name="tovar">
+        <textarea name="question"></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
   <div class="wrapper">
     <header>
       <a href="#">
@@ -35,7 +48,7 @@
     </header>
   </div>
   <main>
-    <img src="/image/mainBG.svg" alt="Main Background">
+    <img src="image/mainBG.svg" alt="Main Background">
     <div class="wrapper">
       <div class="main__content">
         <h1>OUTDOOR Магазин</h1>
@@ -49,57 +62,68 @@
   </main>
   <section>
     <div class="wrapper about__site">
-      <img src="image/pictures/pic-1.svg" alt="">
+      <img src="image/pictures/pic-1.svg" alt="Picture">
       <div class="about__site-content">
         <p class="about__site-title">Про нас и нашу активность</p>
-        <p>Наша компания специализируется на производстве специальной одежды для экстримальных видов спорта. Мы предлагаем широкий ассортимент высококачественных товаров для занятий любыми видами экстремальных видов спорта.
+        <p>Наша компания специализируется на производстве специальной одежды для экстримальных видов спорта. Мы
+          предлагаем широкий ассортимент высококачественных товаров для занятий любыми видами экстремальных видов
+          спорта.
 
-          Вся наша продукция разработана с учетом особенностей каждого вида спорта, чтобы обеспечить максимальный комфорт и безопасность для наших клиентов.
+          Вся наша продукция разработана с учетом особенностей каждого вида спорта, чтобы обеспечить максимальный
+          комфорт и безопасность для наших клиентов.
 
-          Мы работаем только с лучшими материалами, чтобы наша одежда была прочной и долговечной. Кроме того, мы постоянно обновляем наш ассортимент, чтобы предложить клиентам самые последние инновации и технологии.</p>
+          Мы работаем только с лучшими материалами, чтобы наша одежда была прочной и долговечной. Кроме того, мы
+          постоянно обновляем наш ассортимент, чтобы предложить клиентам самые последние инновации и технологии.</p>
       </div>
     </div>
   </section>
   <section class="services">
     <div class="wrapper services">
       <h2>Наши премущества</h2>
-      <p class="services__desc">Наша компания предлагает высококачественную, безопасную и инновационную специальную одежду для экстремальных видов спорта, которая удовлетворяет потребности профессионалов и любителей.</p>
+      <p class="services__desc">Наша компания предлагает высококачественную, безопасную и инновационную специальную
+        одежду для экстремальных видов спорта, которая удовлетворяет потребности профессионалов и любителей.</p>
       <div>
         <div class="parent">
           <div class="div1 card__service">
-            <img src="/image/products/Frame.svg" alt="Service Card">
+            <img src="image/products/Frame.svg" alt="Service Card">
             <p class="card__service-title">Экологический материал</p>
-            <p class="card__service-desd">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+            <p class="card__service-desd">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+              enim in eros elementum
               tristique.</p>
           </div>
           <div class="div2 card__service">
-            <img src="/image/products/Frame-3.svg" alt="Service Card">
+            <img src="image/products/Frame-3.svg" alt="Service Card">
             <p class="card__service-title">Гаранития</p>
-            <p class="card__service-desd">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+            <p class="card__service-desd">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+              enim in eros elementum
               tristique.</p>
           </div>
           <div class="div3 card__service">
-            <img src="/image/products/Frame-1.svg" alt="Service Card">
+            <img src="image/products/Frame-1.svg" alt="Service Card">
             <p class="card__service-title">Проверены веременем</p>
-            <p class="card__service-desd">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+            <p class="card__service-desd">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+              enim in eros elementum
               tristique.</p>
           </div>
           <div class="div4 card__service">
-            <img src="/image/products/Frame-5.svg" alt="Service Card">
+            <img src="image/products/Frame-5.svg" alt="Service Card">
             <p class="card__service-title">Лучший материал</p>
-            <p class="card__service-desd">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+            <p class="card__service-desd">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+              enim in eros elementum
               tristique.</p>
           </div>
           <div class="div5 card__service">
-            <img src="/image/products/Frame-2.svg" alt="Service Card">
+            <img src="image/products/Frame-2.svg" alt="Service Card">
             <p class="card__service-title">Лучший дизайн</p>
-            <p class="card__service-desd">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+            <p class="card__service-desd">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+              enim in eros elementum
               tristique.</p>
           </div>
           <div class="div6 card__service">
-            <img src="/image/products/Frame-4.svg" alt="Service Card">
+            <img src="image/products/Frame-4.svg" alt="Service Card">
             <p class="card__service-title">Гарантированное качество</p>
-            <p class="card__service-desd">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+            <p class="card__service-desd">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+              enim in eros elementum
               tristique.</p>
           </div>
         </div>
@@ -151,7 +175,7 @@
               </div>
               <div class="product-details">
                 <h4><a>
-                  Горнолыжные шлемы</a></h4>
+                    Горнолыжные шлемы</a></h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, possimus nostrum!</p>
                 <div class="product-bottom-details">
                   <div class="product-price">25500 руб</div>
@@ -220,7 +244,8 @@
   <section>
     <div class="wrapper">
       <h4>Познакомьтесь с нашими категориями товара</h4>
-      <p>У нас вы найдете широкий ассортимент товаров, разбитых на удобные категории, чтобы вы могли быстро найти то, что вам нужно.</p>
+      <p>У нас вы найдете широкий ассортимент товаров, разбитых на удобные категории, чтобы вы могли быстро найти то,
+        что вам нужно.</p>
       <div class="parent">
         <div class="card_1 card__products">
           <p class="card__products-title">Аксессуары</p>
@@ -250,21 +275,21 @@
     </div>
   </section>
   <section class="feedback">
-    <div class="wrapper">
-      <h5>Check out our products.</h5>
-      <p class="">Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis. Mauris
-        euismod elit et nisi ultrices, ut faucibus orci tincidunt.</p>
-      <button>Связаться с нами</button>
+    <div class="wrapper feedback">
+      <h5>Обратная связь</h5>
+      <p>Остались вопросы? Тогда можете связаться с нами для решения их</p>
+      <button id="modalBtn">Связаться с нами</button>
     </div>
   </section>
   <footer>
     <div class="wrapper footer">
-      <img src="/image/logo-wt.svg" alt="Logo">
-      <p>© Outdoor Exploration, LLC. All rights reserved</p>
+      <img src="image/logo-wt.svg" alt="Logo">
+      <p>© Outdoor. Все права защищены</p>
     </div>
   </footer>
   <script src="https://kit.fontawesome.com/362e1a3315.js" crossorigin="anonymous"></script>
   <script src="js/slider.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 
 </html>
