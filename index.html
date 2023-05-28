@@ -18,11 +18,16 @@
     <div class="modal-content">
       <span class="close">&times;</span>
       <form action="php/feedback.php" method="post" class="modalForm">
-        <input placeholder="Введите имя" type="text" name="name">
-        <input placeholder="Введите почту" type="text" name="email">
-        <input placeholder="Введите номер телефона" type="text" name="phone">
+        <input placeholder="Введите имя" type="text" name="name" required>
+        <input placeholder="Введите почту" type="text" name="email" required>
+        <input placeholder="Введите номер телефона" type="text" name="phone" required>
         <input placeholder="Введите название товара" type="text" name="tovar">
         <textarea name="question"></textarea>
+        <div>
+          <input type="checkbox" id="checkbox" onchange="toggleSubmitButton()" required>
+          <a href="files/Политика.pdf" download>Отправляю форму, вы соглашаетесь с политикой обратки информации на
+            сайте</a>
+        </div>
         <button type="submit">Отправить</button>
       </form>
     </div>
@@ -290,6 +295,7 @@
   <script src="https://kit.fontawesome.com/362e1a3315.js" crossorigin="anonymous"></script>
   <script src="js/slider.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/formSubmit.js"></script>
 </body>
 
 </html>
