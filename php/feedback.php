@@ -8,7 +8,7 @@
 
     $subject = "=?utf-8?B?".base64_encode("Обратная связь")."?=";
     $headers ="From: $email\r\nReply-to: $email\r\nContent-type: text/html; charset=utf-8\r\n";
-    $to = "EMAIL";
+    $to = "admin@e-outdoor.ru";
 
     $sendMessage = "Имя: " . $name;
     $sendMessage .= "<br>Почта: " . $email;
